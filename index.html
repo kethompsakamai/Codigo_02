@@ -43,7 +43,8 @@
           <div><strong>∞</strong><span>AMBICIÓN</span></div>
         </div>
       </div>
-      <div class="hero-art" aria-label="Nube roja de Akatsuki">
+      <div class="hero-art" aria-label="Miembros de Akatsuki">
+        <img class="hero-group-image" src="https://fotografias-2.larazon.es/assets/videojuegos/2023/03/akatsuki-naruto.jpg?height=720&width=1200" alt="Varios miembros de Akatsuki reunidos" loading="eager">
         <div class="moon"></div>
         <div class="red-cloud cloud-large"><span></span></div>
         <div class="red-cloud cloud-small"><span></span></div>
@@ -75,28 +76,34 @@
         <p>Selecciona un miembro para conocer su perfil.</p>
       </div>
       <div class="member-grid" id="memberGrid">
-        <button class="member-card" data-member="itachi">
-          <span class="member-number">01</span><div class="member-symbol">写</div>
+        <button class="member-card reveal" data-member="itachi">
+          <span class="member-number">01</span>
+          <div class="member-photo"><img src="https://i.pinimg.com/736x/4e/00/9a/4e009ad7cf2c339c46ef5d1644798755.jpg" alt="Itachi Uchiha de Akatsuki" loading="lazy"><span class="photo-vignette"></span><span class="member-symbol">写</span></div>
           <span class="member-name">Itachi Uchiha</span><span class="member-role">EL ESPEJO</span><span class="card-arrow">↗</span>
         </button>
-        <button class="member-card" data-member="pain">
-          <span class="member-number">02</span><div class="member-symbol">零</div>
+        <button class="member-card reveal" data-member="pain">
+          <span class="member-number">02</span>
+          <div class="member-photo"><img src="https://images4.wikia.nocookie.net/__cb20100924231721/denaruto3/de/images/e/ee/PainA.png" alt="Pain de Akatsuki" loading="lazy"><span class="photo-vignette"></span><span class="member-symbol">零</span></div>
           <span class="member-name">Pain</span><span class="member-role">EL LÍDER</span><span class="card-arrow">↗</span>
         </button>
-        <button class="member-card" data-member="konan">
-          <span class="member-number">03</span><div class="member-symbol">白</div>
+        <button class="member-card reveal" data-member="konan">
+          <span class="member-number">03</span>
+          <div class="member-photo"><img src="https://image.tensorartassets.com/cdn-cgi/image/w%3D600/model_showcase/841786317244440297/2814397f-440c-8fc1-c65f-0481ad54c9a9.png" alt="Konan de Akatsuki" loading="lazy"><span class="photo-vignette"></span><span class="member-symbol">白</span></div>
           <span class="member-name">Konan</span><span class="member-role">EL ÁNGEL</span><span class="card-arrow">↗</span>
         </button>
-        <button class="member-card" data-member="kisame">
-          <span class="member-number">04</span><div class="member-symbol">南</div>
+        <button class="member-card reveal" data-member="kisame">
+          <span class="member-number">04</span>
+          <div class="member-photo"><img src="https://2.bp.blogspot.com/-Zjjf11y1BPo/Wf3Lb4fc5zI/AAAAAAAAAAM/--fBmcuqT0kHcjkT-Ae-glbmwC6W0QuhACLcBGAs/s1600/795229b5d970fadd8ea071ceac986b5adaa78026_hq.jpg" alt="Kisame Hoshigaki de Akatsuki" loading="lazy"><span class="photo-vignette"></span><span class="member-symbol">南</span></div>
           <span class="member-name">Kisame Hoshigaki</span><span class="member-role">LA BESTIA</span><span class="card-arrow">↗</span>
         </button>
-        <button class="member-card" data-member="deidara">
-          <span class="member-number">05</span><div class="member-symbol">青</div>
+        <button class="member-card reveal" data-member="deidara">
+          <span class="member-number">05</span>
+          <div class="member-photo"><img src="https://imgix.ranker.com/user_node_img/50088/1001750690/original/expressionless-face-photo-u1?auto=format&dpr=2&fit=crop&fm=pjpg&q=60&w=500" alt="Deidara de Akatsuki" loading="lazy"><span class="photo-vignette"></span><span class="member-symbol">青</span></div>
           <span class="member-name">Deidara</span><span class="member-role">EL ARTISTA</span><span class="card-arrow">↗</span>
         </button>
-        <button class="member-card" data-member="sasori">
-          <span class="member-number">06</span><div class="member-symbol">玉</div>
+        <button class="member-card reveal" data-member="sasori">
+          <span class="member-number">06</span>
+          <div class="member-photo"><img src="https://t1.blockdit.com/photos/2025/07/687730ad07472d530d43de38_800x0xcover_JyDz94DO.jpg" alt="Sasori de Akatsuki" loading="lazy"><span class="photo-vignette"></span><span class="member-symbol">玉</span></div>
           <span class="member-name">Sasori</span><span class="member-role">EL TITIRITERO</span><span class="card-arrow">↗</span>
         </button>
       </div>
@@ -125,11 +132,13 @@
     <section class="member-modal" role="dialog" aria-modal="true" aria-labelledby="modalName">
       <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
       <p class="eyebrow" id="modalRole">PERFIL DEL MIEMBRO</p>
+      <div class="modal-character-image"><img id="modalImage" src="" alt=""></div>
       <h2 id="modalName">Nombre</h2>
       <p id="modalDescription"></p>
       <div class="modal-detail"><span>ANILLO</span><strong id="modalRing"></strong></div>
     </section>
   </div>
+  <div class="embers" id="embers" aria-hidden="true"></div>
   <script src="script.js"></script>
 </body>
 </html>
